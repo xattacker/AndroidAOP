@@ -5,13 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.blankj.utilcode.util.ToastUtils;
 import com.zj.singclick.SingleClick;
-import com.zj.test.TestActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class Main2Activity extends AppCompatActivity{
@@ -44,7 +42,6 @@ public class Main2Activity extends AppCompatActivity{
     }
 
     public void btnStop(View view) {
-        startActivity(new Intent(this, TestActivity.class));
     }
 
     public void btnInter(View view) {
