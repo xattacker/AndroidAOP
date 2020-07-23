@@ -2,7 +2,7 @@
 
 > AOP的方式实现防止按钮多次点击，Java和Kotlin都能使用。
 
-minSdkVersion: 18
+minSdkVersion: 24
 
 使用方法很简单，需要几步配置，配置完成之后直接添加注解即可使用，下面是配置方法：
 
