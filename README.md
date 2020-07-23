@@ -35,7 +35,7 @@ allprojects {
 apply plugin: 'android-aspectjx'
 ```
 
-4. 在`app`的`build.gradle`中的`dependencies`添加[ ![Download](https://api.bintray.com/packages/xattacker/maven/SingleClick/images/download.svg?version=1.0.0) ](https://bintray.com/xattacker/maven/SingleClick/1.0.0/link)
+4. 在`app`的`build.gradle`中的`dependencies`添加[ ![Download](https://api.bintray.com/packages/xattacker/maven/SingleClick/images/download.svg?version=1.0.1) ](https://bintray.com/xattacker/maven/SingleClick/1.0.1/link)
 
 ```
 implementation 'com.xattacker.android:SingleClick:1.0.0'
