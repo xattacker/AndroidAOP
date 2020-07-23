@@ -6,9 +6,9 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.blankj.utilcode.util.ToastUtils
-import com.zj.singclick.SingleClick
-import com.zj.singclick.click
-import com.zj.singclick.setSafeListener
+import com.xattacker.android.singleClick.SingleClick
+import com.xattacker.android.singleClick.click
+import com.xattacker.android.singleClick.setSafeListener
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() ,View.OnClickListener{

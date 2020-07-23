@@ -1,4 +1,4 @@
-package com.zj.singclick
+package com.xattacker.android.singleClick
 
 import java.lang.annotation.Retention
 import java.lang.annotation.RetentionPolicy

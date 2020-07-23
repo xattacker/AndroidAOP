@@ -1,4 +1,4 @@
-package com.zj.singclick
+package com.xattacker.android.singleClick
 
 import android.view.View
 import org.aspectj.lang.ProceedingJoinPoint
@@ -19,7 +19,7 @@ class SingleClickAspect
      * com.zj.singclick.SingleClick需要替换成
      * 自己项目中SingleClick这个类的全路径哦
      */
-    @Pointcut("execution(@com.zj.singclick.SingleClick * *(..))")
+    @Pointcut("execution(@com.xattacker.android.singleClick.SingleClick * *(..))")
     fun methodAnnotated()
     {
     }

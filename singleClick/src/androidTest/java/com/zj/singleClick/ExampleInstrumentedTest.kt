@@ -1,4 +1,4 @@
-package com.zj.singclick
+package com.zj.singleClick
 
 import android.content.Context
 import android.support.test.InstrumentationRegistry

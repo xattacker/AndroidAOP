@@ -1,4 +1,4 @@
-package com.zj.singclick
+package com.xattacker.android.singleClick
 
 import android.view.View
 

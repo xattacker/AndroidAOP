@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.blankj.utilcode.util.ToastUtils;
-import com.zj.singclick.SingleClick;
+import com.xattacker.android.singleClick.SingleClick;
 
 import androidx.appcompat.app.AppCompatActivity;
 

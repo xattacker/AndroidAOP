@@ -1,4 +1,4 @@
-package com.zj.singclick
+package com.zj.singleClick
 
 import org.junit.Assert
 import org.junit.Test

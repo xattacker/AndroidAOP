@@ -1,1 +1,1 @@
-include ':app', ':singclick'
+include ':app', ':singleClick'
