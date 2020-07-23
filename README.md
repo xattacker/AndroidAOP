@@ -94,7 +94,6 @@ override fun onClick(v: View?) {
 }
 ```
 
-OK。
 
 新增了`Kotlin`的判断重复的方法，大家可以按照下面的方法直接进行调用，比写注解更加灵活方便：
 
