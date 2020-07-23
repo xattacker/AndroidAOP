@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'android-aspectjx'
+apply plugin: 'com.novoda.bintray-release' // for jCenter uploading
 
 android {
     compileSdkVersion 28
@@ -10,7 +11,7 @@ android {
         minSdkVersion 20
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -22,6 +23,17 @@ android {
         }
     }
 }
+
+// for jCenter uploading
+publish {
+    userOrg = 'xattacker'        //bintray.com用户名
+    groupId = 'com.xattacker.android'    //jcenter上的路径
+    artifactId = 'SingleClick'   //项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'Android AOP prevent Mutli Click component library'//描述，自由填写
+    website = 'https://github.com/xattacker/AndroidAOP' // 网址，自由填写
+}
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
