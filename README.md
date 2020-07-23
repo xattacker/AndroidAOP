@@ -2,6 +2,8 @@
 
 > AOP的方式实现防止按钮多次点击，Java和Kotlin都能使用。
 
+minSdkVersion: 18
+
 使用方法很简单，需要几步配置，配置完成之后直接添加注解即可使用，下面是配置方法：
 
 ## 引入
@@ -21,7 +23,7 @@ dependencies {
 allprojects {
     repositories {
         ...
-        maven { url 'https://jitpack.io' }
+        jcenter()
     }
 }
 ```
@@ -33,10 +35,9 @@ apply plugin: 'android-aspectjx'
 ```
 
 4. 在`app`的`build.gradle`中的`dependencies`添加
-[![](https://jitpack.io/v/zhujiang521/AndroidAOP.svg)](https://jitpack.io/#zhujiang521/AndroidAOP)
 
 ```
-implementation 'com.github.zhujiang521:AndroidAOP:1.1.1'
+implementation 'com.xattacker.android:SingleClick:1.0.0'
 ```
 
 ## 使用方法
