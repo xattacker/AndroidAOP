@@ -8,7 +8,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 20
+        minSdkVersion 18
         targetSdkVersion 28
         versionCode 1
         versionName "1.0.0"
@@ -29,7 +29,7 @@ publish {
     userOrg = 'xattacker'        //bintray.com用户名
     groupId = 'com.xattacker.android'    //jcenter上的路径
     artifactId = 'SingleClick'   //项目名称
-    publishVersion = '1.0.0'//版本号
+    publishVersion = '${android.defaultConfig.versionName}' //版本号
     desc = 'Android AOP prevent Mutli Click component library'//描述，自由填写
     website = 'https://github.com/xattacker/AndroidAOP' // 网址，自由填写
 }
