@@ -1,18 +1,17 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
-
 apply plugin: 'android-aspectjx'
+
 android {
     compileSdkVersion 29
+
     defaultConfig {
         applicationId "zj.it.bhne.androidaop"
-        minSdkVersion 21
+        minSdkVersion 20
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
