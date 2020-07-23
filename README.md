@@ -77,7 +77,7 @@ override fun onClick(v: View?) {
 默认间隔时间为`1000`毫秒，可以自行修改，在注解后面添加括号，在括号中声明需要的时间值即可。
 
 ```
-@SingleClick(1000)
+@SingleClick(2000)
 override fun onClick(v: View?) {
     if (v != null) {
         when(v.id){
