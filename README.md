@@ -38,7 +38,7 @@ apply plugin: 'android-aspectjx'
 4. 在`app`的`build.gradle`中的`dependencies`添加[ ![Download](https://api.bintray.com/packages/xattacker/maven/SingleClick/images/download.svg?version=1.0.1) ](https://bintray.com/xattacker/maven/SingleClick/1.0.1/link)
 
 ```
-implementation 'com.xattacker.android:SingleClick:1.0.0'
+implementation 'com.xattacker.android:SingleClick:1.0.1'
 ```
 
 ## 使用方法
@@ -97,7 +97,12 @@ OK。
 新增了`Kotlin`的判断重复的方法，大家可以按照下面的方法直接进行调用，比写注解更加灵活方便：
 
 ```
-btnKuoZhan.setSafeListener {
+btnKuoZhan.setSingleClick {
+    ToastUtils.showShort("222")
+    Log.e("kuozhan","wwww")
+}
+
+btnKuoZhan.setSingleClick(2000) {
     ToastUtils.showShort("222")
     Log.e("kuozhan","wwww")
 }
