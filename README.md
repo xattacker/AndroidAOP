@@ -56,8 +56,8 @@ public void onClick(View v) {
     switch (v.getId()) {
         case R.id.btnClick2:
             ToastUtils.showShort("哈哈哈");
-            Log.e("刘沛星","wwww");
-        break;
+            Log.d("aaa","btnClick2 clicked");
+            break;
     }
 }
 ```
