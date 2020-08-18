@@ -55,7 +55,7 @@ implementation 'com.xattacker.android:SingleClick:1.0.1'
 public void onClick(View v) {
     switch (v.getId()) {
         case R.id.btnClick2:
-            ToastUtils.showShort("哈哈哈");
+            ToastUtils.showShort("hello");
             Log.d("aaa","btnClick2 clicked");
             break;
     }
@@ -70,8 +70,8 @@ override fun onClick(v: View?) {
     if (v != null) {
         when(v.id){
             R.id.btnClick ->{
-                ToastUtils.showShort("哈哈哈")
-                Log.e("刘沛星","wwww")
+                ToastUtils.showShort("hello")
+                Log.d("aaa","btnClick2 clicked")
             }
         }
     }
@@ -86,8 +86,8 @@ override fun onClick(v: View?) {
     if (v != null) {
         when(v.id){
             R.id.btnClick ->{
-                ToastUtils.showShort("哈哈哈")
-                Log.e("刘沛星","wwww")
+                ToastUtils.showShort("hello")
+                Log.d("aaa","btnClick2 clicked")
             }
         }
     }
@@ -99,12 +99,12 @@ override fun onClick(v: View?) {
 
 ```
 btnKuoZhan.setSingleClick {
-    ToastUtils.showShort("222")
-    Log.e("kuozhan","wwww")
+    ToastUtils.showShort("hello")
+    Log.d("aaa","btnClick2 clicked")
 }
 
 btnKuoZhan.setSingleClick(2000) {
-    ToastUtils.showShort("222")
-    Log.e("kuozhan","wwww")
+    ToastUtils.showShort("hello")
+    Log.d("aaa","btnClick2 clicked")
 }
 ```
