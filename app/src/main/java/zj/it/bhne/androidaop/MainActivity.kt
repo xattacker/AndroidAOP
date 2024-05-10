@@ -4,11 +4,11 @@ import android.os.Bundle
 
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.blankj.utilcode.util.ToastUtils
 import com.xattacker.android.singleClick.SingleClick
 import com.xattacker.android.singleClick.setSingleClick
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() ,View.OnClickListener
 {
@@ -17,12 +17,15 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
-        btnClick.setOnClickListener(this)
+
+        val button = this.findViewById<Button>(R.id.btnClick)
+        button.setOnClickListener(this)
         initView()
     }
 
     private fun initView() {
-        btnKuoZhan.setSingleClick(2000) {
+        val button = this.findViewById<Button>(R.id.btnKuoZhan)
+        button.setSingleClick(2000) {
             ToastUtils.showShort("222")
             Log.e("aaa","wwww")
         }

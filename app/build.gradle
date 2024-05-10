@@ -1,17 +1,17 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'android-aspectjx'
 
 android {
-    compileSdkVersion 29
+    compileSdk 33
 
     defaultConfig {
         applicationId "zj.it.bhne.androidaop"
         minSdkVersion 20
-        targetSdkVersion 29
+        targetSdkVersion 33
+
         versionCode 1
         versionName "1.0.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -20,10 +20,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    namespace 'zj.it.bhne.androidaop'
 
 }
 

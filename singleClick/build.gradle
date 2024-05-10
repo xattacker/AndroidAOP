@@ -1,19 +1,23 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'android-aspectjx'
-apply plugin: 'com.novoda.bintray-release' // for jCenter uploading
 
 android {
-    compileSdkVersion 28
+    compileSdk 33
+
+    namespace 'com.xattacker.android.singleClick'
 
     defaultConfig {
         minSdkVersion 18
-        targetSdkVersion 28
-        versionCode 2
-        versionName "1.0.1"
+        targetSdkVersion 33
+    }
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
     }
 
     buildTypes {
@@ -24,24 +28,12 @@ android {
     }
 }
 
-// for jCenter uploading
-publish {
-    userOrg = 'xattacker'        //bintray.com用户名
-    groupId = 'com.xattacker.android'    //jcenter上的路径
-    artifactId = 'SingleClick'   //项目名称
-    publishVersion = '1.0.1' //版本号
-    desc = 'Android AOP prevent Mutli Click component library'//描述，自由填写
-    website = 'https://github.com/xattacker/AndroidAOP' // 网址，自由填写
-}
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
     api 'org.aspectj:aspectjrt:1.9.5'
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
     implementation "androidx.core:core-ktx:1.2.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
